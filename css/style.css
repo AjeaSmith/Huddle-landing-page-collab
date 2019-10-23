@@ -1,0 +1,61 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 0;
+    padding: 7%;
+    background-color: rgb(10, 36, 46);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+svg {
+    margin-bottom: 20px;
+}
+
+path {
+    fill: white;
+}
+
+.left {
+    width: 33%;
+    text-align: left;
+}
+
+.left li{
+    margin-bottom: 20px;
+}
+
+.middle {
+    text-align: left;
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.right-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.right {
+    text-align: left;
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.social {
+    display: flex;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
