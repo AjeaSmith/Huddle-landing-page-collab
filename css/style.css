@@ -1,144 +1,181 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
 }
 
 a:link {
-    color: white;
+  color: white;
 }
 
 /* HEADER */
 header {
-    display: flex;
-    flex-direction: column;
-    background-image: url('../images/bg-hero-mobile.svg');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    align-content: center;
-    text-align: center;
-    margin: 0 auto;   
-    padding: 1.5em 1em; 
-    overflow: hidden;
-    
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.5em 1em;
+  overflow: hidden;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1em 0.5rem;
-    margin-bottom: 2em;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em 0.5rem;
+  margin-bottom: 2em;
 }
 .logo {
-    height: 1.25em;
-    width: auto;
-    display: inline-block;
-    padding: 0.75em ;
-    padding-right: 0;
-
+  height: 1.25em;
+  width: auto;
+  display: inline-block;
+  padding: 0.75em;
+  padding-right: 0;
 }
 .btn-white {
-    display: inline-block;
-    background: white;
-    padding: .7em 1.25em;
-    font-size: 0.9em;
-    font-weight: 700;
-    outline: none;
-    border-radius: 50px;
-    border: none;
-    text-decoration: none;
-    box-shadow: 2px 3px 3px 1px rgb(127, 141, 152, 0.6);
-    
+  display: inline-block;
+  background: white;
+  padding: 0.7em 1.25em;
+  font-size: 0.9em;
+  font-weight: 700;
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  text-decoration: none;
+  box-shadow: 2px 3px 3px 1px rgb(127, 141, 152, 0.6);
 }
 
 /* FOOTER  */
 footer {
-    display: flex;
-    justify-content: space-around;
-    flex-shrink: 0;
-    padding: 7%;
-    background-color: rgb(10, 36, 46);
-    color: white;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-shrink: 0;
+  padding: 3%;
+  background-color: rgb(10, 36, 46);
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 svg {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 path {
-    fill: white;
+  fill: white;
 }
 
 .left {
-    width: 33%;
-    text-align: left;
+  list-style: none;
+  text-align: left;
 }
 
-.left li{
-    margin-bottom: 20px;
+.left li {
+  margin-bottom: 20px;
+}
+.left li i {
+  margin-right: 0.7em;
 }
 
 .middle {
-    text-align: left;
-    list-style-type: none;
-    line-height: 30px;
+  text-align: left;
+  list-style-type: none;
+  line-height: 30px;
 }
 
 .right-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .right {
-    text-align: left;
-    list-style-type: none;
-    line-height: 30px;
+  text-align: left;
+  list-style-type: none;
+  line-height: 30px;
 }
 
 .social {
-    display: flex;
-    letter-spacing: 10px;
-    font-size: 20px;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+}
+.social a {
+  margin-right: 0.6em;
+}
+.social a i {
+  border-radius: 50px;
+  padding: 0.3em 0.4em;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
 }
 
 /* Media Quries  */
 
 /* Nav Bar */
 @media (min-width: 376px) {
-    nav {
-        background-image: url('../images/bg-hero-desktop.svg');
-        padding: 2em .5rem;
-    }
-    .logo {
-        height: 1.75em;
-    }
-    .btn-white {
-        padding: .7em 1.75em;
-        font-size: 1em;
-    }
+  nav {
+    background-image: url("../images/bg-hero-desktop.svg");
+    padding: 2em 0.5rem;
+  }
+  .logo {
+    height: 1.75em;
+  }
+  .btn-white {
+    padding: 0.7em 1.75em;
+    font-size: 1em;
+  }
 }
 @media (min-width: 698px) {
-    nav {
-        padding: 2em 1.5rem;
-    }
-    .logo {
-        height: 2.25em;
-    }
-    .btn-white {
-        padding: 0 2.75em;
-        font-size: 1.125em;
-        line-height: 0.5;
-        letter-spacing: 0.1em;
-    }
+  nav {
+    padding: 2em 1.5rem;
+  }
+  .logo {
+    height: 2.25em;
+  }
+  .btn-white {
+    padding: 0 2.75em;
+    font-size: 1.125em;
+    line-height: 0.5;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* Footer */
+@media (min-width: 868px) {
+  footer {
+    height: 50vh;
+    align-items: center;
+    flex-direction: row;
+  }
+  footer .left {
+    width: 33%;
+    padding-right: 1em;
+  }
+  footer .right {
+    padding: 0 1em;
+  }
+  footer .right-wrapper {
+    align-items: end;
+    height: 90px;
+  }
 }
