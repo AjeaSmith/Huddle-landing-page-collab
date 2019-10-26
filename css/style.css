@@ -1,5 +1,6 @@
 html,
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -62,10 +63,9 @@ nav {
 
 /* FOOTER  */
 footer {
-  height: 100%;
+  height: 74vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   flex-shrink: 0;
   padding: 3%;
   background-color: rgb(10, 36, 46);
@@ -163,9 +163,10 @@ path {
 /* Footer */
 @media (min-width: 868px) {
   footer {
-    height: 50vh;
+    height: 63vh;
     align-items: center;
     flex-direction: row;
+    justify-content: space-around;
   }
   footer .left {
     width: 33%;
