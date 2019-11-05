@@ -1,8 +1,8 @@
-# Contributors List :) 
+# Contributors List :)
 
-## Thanks to all who joined this project! :D 
+## Thanks to all who joined this project! :D
 
-1. https://github.com/ajmor1
+1. https://github.com/ajmor01
 2. https://github.com/peoray
 3. https://github.com/maknetaRo
 4. https://github.com/cluzier
