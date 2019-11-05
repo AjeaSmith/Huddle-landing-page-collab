@@ -6,14 +6,10 @@ body {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Poppins", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
 }
 
 a:link {
@@ -99,7 +95,38 @@ nav {
   color: hsl(208, 11%, 55%);
   font-size: 0.8em;
 }
-
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+.hero h1 {
+    font-size: 1.5rem;
+}
+.hero p {
+    display: inline-block;
+    font-size: 1.125rem;
+    margin-bottom: 1.75rem;
+    line-height: 1.5;
+}
+.btn-pink {
+    background-color: hsl(322, 100%, 66%);
+    color: #ffffff;
+    display: inline-block;
+    padding: 1em 4.5em;
+    font-size: 0.9em;
+    font-weight: 700;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+.hero-right img {
+    width: 100%;
+    margin-top: 1.5rem;
+}
 /* FOOTER  */
 footer {
   height: 74vh;
@@ -172,17 +199,74 @@ path {
 
 /* Nav Bar */
 @media (min-width: 376px) {
-  nav {
-    background-image: url("../images/bg-hero-desktop.svg");
-    padding: 2em 0.5rem;
-  }
-  .logo {
-    height: 1.75em;
-  }
-  .btn-white {
-    padding: 0.7em 1.75em;
-    font-size: 1em;
-  }
+    nav {
+        
+        padding: 2em .5rem;
+    }
+    .logo {
+        height: 1.75em;
+    }
+    .btn-white {
+        padding: .7em 1.75em;
+        font-size: 1em;
+    }
+}
+@media (min-width: 698px) {
+    nav {
+        background-image: url('../images/bg-hero-desktop.svg');
+        padding: 2em 1.5rem;
+    }
+    .logo {
+        height: 2.25em;
+    }
+    .btn-white {
+        padding: 0 2.75em;
+        font-size: 1.125em;
+        line-height: 0.5;
+        letter-spacing: 0.1em;
+    }
+    .hero {
+        padding: 2.5rem;
+    }
+    .hero-left h1{
+        font-size: 3rem;
+    }
+}
+@media (min-width: 1024px) {
+    .hero {
+        display: flex;
+        flex-direction: row;  
+        padding-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    .hero-left {
+        max-width: 33%;
+        padding-right: 4rem;
+        text-align: left;
+    }
+    .hero-left h1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    .btn-pink {
+        padding: .7em 2.5em;
+    
+    }
+    .hero-right {
+        padding-left: .5rem;
+    }
+    .hero-right img {
+        width: 105%;  
+    }   
+    
+}
+@media (min-width: 1440px) {
+    .hero-right img {
+        margin-top: -2rem;
+    }   
+    .hero-left {
+        padding-top: 4rem;
+    }
 }
 @media (min-width: 698px) {
   nav {
