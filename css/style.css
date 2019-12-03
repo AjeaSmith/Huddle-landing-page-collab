@@ -147,7 +147,17 @@ nav {
   font-size: 0.8em;
 }
 /* FOOTER  */
+footer .newsletter{
+  width: 468px;
+  height: 230px; 
+  background: blue; 
+  color: rgb(10, 36, 46);
+  position: absolute;
+  top: -80px;
+
+}
 footer {
+  position: relative;
   height: 74vh;
   display: flex;
   flex-direction: column;
