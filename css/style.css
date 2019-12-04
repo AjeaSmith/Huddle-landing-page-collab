@@ -113,7 +113,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
 }
 
 .feature {
@@ -148,17 +148,30 @@ nav {
 }
 /* FOOTER  */
 footer .newsletter{
+  border-radius: 20px;
   width: 468px;
-  height: 230px; 
-  background: blue; 
+  height: 210px; 
+  background: #fff; 
   color: rgb(10, 36, 46);
   position: absolute;
   top: -80px;
+  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.1);
 
+}
+footer .newsletter button{
+  cursor: pointer;
+  outline:none;
+  border: none;
+  padding: 1em;
+  width: 240px;
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  font-size: 0.8em;
+  border-radius: 50px;
 }
 footer {
   position: relative;
-  height: 74vh;
+  height: 82vh;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -178,6 +191,7 @@ path {
 }
 
 .left {
+  margin-top: 148px;
   list-style: none;
   text-align: left;
 }
