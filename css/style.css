@@ -147,15 +147,28 @@ nav {
   font-size: 0.8em;
 }
 /* FOOTER  */
+footer {
+  position: relative;
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding: 3%;
+  background-color: rgb(10, 36, 46);
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
 footer .newsletter{
   border-radius: 20px;
-  width: 468px;
-  height: 210px; 
-  background: #fff; 
+  width: 357px;
+  height: 174px;
+  background: #fff;
   color: rgb(10, 36, 46);
   position: absolute;
   top: -80px;
-  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.1);
+  left: 2%;
+  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.1)
 
 }
 footer .newsletter button{
@@ -169,59 +182,42 @@ footer .newsletter button{
   font-size: 0.8em;
   border-radius: 50px;
 }
-footer {
-  position: relative;
-  height: 82vh;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  padding: 3%;
-  background-color: rgb(10, 36, 46);
-  color: white;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+footer .newsletter .newsletter-content h1{
+    font-size: 1.5em;
 }
-
 svg {
   margin-bottom: 20px;
 }
-
 path {
   fill: white;
 }
-
 .left {
   margin-top: 148px;
   list-style: none;
   text-align: left;
 }
-
 .left li {
   margin-bottom: 20px;
 }
 .left li i {
   margin-right: 0.7em;
 }
-
 .middle {
   text-align: left;
   list-style-type: none;
   line-height: 30px;
 }
-
 .right-wrapper {
   height: 100px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-
 .right {
   text-align: left;
   list-style-type: none;
   line-height: 30px;
 }
-
 .social {
   justify-content: center;
   display: flex;
@@ -337,14 +333,12 @@ path {
 /* Features Section*/
 @media (min-width: 685px) {
   .features-section__wrapper {
-    flex-direction: row;
     padding: 1rem;
   }
   .feature {
-    margin: 0 1rem;
+    margin: 1rem 1rem;
   }
 }
-
 @media (min-width: 1199px) {
   .features-section__wrapper {
     flex-direction: column;
@@ -368,14 +362,46 @@ path {
     font-size: 1em;
   }
 }
-
 /* Footer */
+@media (min-width: 430px){
+  footer .newsletter{
+    left: 8%;
+  }
+}
+@media (min-width: 500px){
+  footer .newsletter{
+    left: 15%;
+  }
+}
+@media (min-width: 600px){
+  footer .newsletter{
+    left: 20%;
+  }
+}
+@media (min-width: 685px){
+  footer .newsletter{
+    left: 25%;
+    width:450px;
+    height: 185px;
+  }
+  footer .newsletter .newsletter-content h1{
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 768px){
+  footer .newsletter{
+    left: 30%;
+  }
+}
 @media (min-width: 868px) {
   footer {
     height: 63vh;
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
+  }
+  .footer .newsletter{
+    left: 23%;
   }
   footer .left {
     width: 33%;
