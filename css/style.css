@@ -16,6 +16,9 @@ h6 {
   font-style: normal;
   font-weight: 600;
 }
+ul{
+  list-style: none;
+}
 
 a:link {
   color: white;
@@ -400,8 +403,8 @@ path {
     flex-direction: row;
     justify-content: space-around;
   }
-  .footer .newsletter{
-    left: 23%;
+  footer .newsletter{
+    left: 25%;
   }
   footer .left {
     width: 33%;
